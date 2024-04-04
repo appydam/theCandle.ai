@@ -4,11 +4,11 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-300 via-gray-400 to-gray-600 text-white py-8 my-8">
+    <div className="bg-gradient-to-b from-gray-300 via-gray-400 to-gray-600 text-white py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
         <div className="mb-4 md:mb-0">
-          <h2 className="text-2xl font-bold mb-2">theCandle.ai</h2>
-          <p className="text-gray-300">Your Assistant for Wiser Invesments</p>
+          <h2 className="text-2xl font-bold mb-2">Tech Alchemist&apos;s Profile</h2>
+          <p className="text-gray-300">Navigating the coding cosmos, one project at a time</p>
         </div>
 
         <div className="flex space-x-4">

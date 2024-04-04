@@ -1,56 +1,35 @@
-import { FaBell, FaUser } from "react-icons/fa";
-import React from "react";
+import { UserButton } from '@clerk/nextjs';
+import { FileText } from 'lucide-react';
+import React from 'react';
+
+
 
 const Navbar = () => {
   return (
-    <nav className="bg-blue-50 px-8 py-4 flex justify-between items-center">
-      <div className="flex items-center space-x-4">
-        <div className="mr-1">
-          <img src="candle.png" alt="Logo" className="h-8" />
-        </div>
-        <div className="flex space-x-4">
-          <a
-            href="/"
-            className="text-black hover:bg-blue-200 py-2 rounded-lg text-lg"
-          >
-            theCandle
-          </a>
-          <a
-            href="/portfolio"
-            className="text-black hover:bg-blue-200 px-3 py-2 rounded-lg text-lg"
-          >
-            Talk
-          </a>
-          <a
-            href="/buy"
-            className="text-black hover:bg-blue-200 px-3 py-2 rounded-lg text-lg"
-          >
-            Buy
-          </a>
-          <a
-            href="/manage"
-            className="text-black hover:bg-blue-200 px-3 py-2 rounded-lg text-lg"
-          >
-            Manage
-          </a>
-          <a
-            href="/news"
-            className="text-black hover:bg-blue-200 px-3 py-2 rounded-lg text-lg"
-          >
-            News
-          </a>
-          <a
-            href="/learn"
-            className="text-black hover:bg-blue-200 px-3 py-2 rounded-lg text-lg"
-          >
-            Learn
-          </a>
-        </div>
+    <div className="mx-auto translate-y-6">
+      <div className="bg-[conic-gradient(var(--tw-gradient-stops))] from-gray-600 via-gray-400 to-gray-200 p-4 rounded-lg fixed w-[60%] top-0 left-1/2 transform -translate-x-1/2">
+        <nav className="flex items-center justify-between">
+          <div className="text-gray-600 text-xl font-bold flex">
+          <FileText className='text-gray-600 w-8 h-8 mr-2' /> 
+          <UserButton afterSignOutUrl='/'/>
+          </div>
+          <div className="flex space-x-4">
+            <a href="/" className="text-white">
+              Home
+            </a>
+            <a href="/about" className="text-white">
+              About
+            </a>
+            <a href="/tech" className="text-white">
+              Tech
+            </a>
+            <a href="/contact" className="text-white">
+              Contact
+            </a>
+          </div>
+        </nav>
       </div>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-        Get Started
-      </button>
-    </nav>
+    </div>
   );
 };
 
