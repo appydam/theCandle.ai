@@ -1,3 +1,4 @@
+import { squareBackground } from '@/constants/colors';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
@@ -7,7 +8,7 @@ const Footer = () => {
 
     <>
 
-      <footer className="bg-white">
+      <footer className={`inset-0 -z-10 h-full w-full ${squareBackground} `}>
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
 
@@ -27,19 +28,19 @@ const Footer = () => {
                   <label htmlFor="UserEmail" className="sr-only"> Email </label>
 
                   <div
-                    className="border border-gray-100 p-2 focus-within:ring sm:flex sm:items-center sm:gap-4"
+                    className="border border-gray-100 p-2 sm:flex sm:items-center sm:gap-4"
                   >
                     <input
                       type="email"
                       id="UserEmail"
                       placeholder="elon@tesla.com"
-                      className="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm"
+                      className="w-full border h-12 p-2 shadow-lg rounded-lg sm:text-lg"
                     />
 
                     <button
-                      className="mt-1 w-full bg-blue-400 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0"
+                      className="mt-1 w-full bg-gray-500 rounded-lg px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0"
                     >
-                      Sign Up
+                      Subscribe
                     </button>
                   </div>
                 </form>
@@ -240,7 +241,7 @@ const Footer = () => {
 
           <div className="mt-8 border-t border-gray-100 pt-8">
             <div className="sm:flex sm:justify-between">
-              <p className="text-xs text-gray-500">&copy; 2024. TheCandle AI . All rights reserved.</p>
+              <p className="text-xs text-gray-500">&copy; 2024. Portfolio AI . All rights reserved.</p>
 
               <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
                 <li>
@@ -261,45 +262,6 @@ const Footer = () => {
       </footer>
 
     </>
-
-    // <div className="bg-gradient-to-b from-gray-300 via-gray-400 to-gray-600 text-white py-8 my-8">
-    //   <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-    //     <div className="mb-4 md:mb-0">
-    //       <h2 className="text-2xl font-bold mb-2">theCandle.ai</h2>
-    //       <p className="text-gray-300">Your Assistant for Wiser Invesments</p>
-    //     </div>
-
-    //     <div className="flex space-x-4">
-    //       <Link
-    //         href="https://www.linkedin.com/in/arpitdhamija/"
-    //         target="_blank"
-    //         className="text-gray-300 hover:text-gray-100 transition duration-300"
-    //       >
-    //         <Linkedin className='text-black'/>
-    //       </Link>
-    //       <Link
-    //         href="mailto:appydam@gmail.com"
-    //         className="text-gray-300 hover:text-gray-100 transition duration-300"
-    //       >
-    //         <Mail className='text-black'/>
-    //       </Link>
-    //       <Link
-    //         href="https://github.com/appydam"
-    //         target="_blank"
-    //         className="text-gray-300 hover:text-gray-100 transition duration-300"
-    //       >
-    //         <Github className='text-black'/>
-    //       </Link>
-    //       <Link
-    //         href="https://twitter.com/arpit_dhamija"
-    //         target="_blank"
-    //         className="text-gray-300 hover:text-gray-100 transition duration-300"
-    //       >
-    //         <Twitter className='text-black'/>
-    //       </Link>
-    //     </div>
-    //   </div>
-    // </div>
 
 
   );
