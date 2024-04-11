@@ -83,7 +83,7 @@ export default function Home() {
               <div className='absolute h-18 w-72 bg-slate-200 rounded-lg translate-x-[450px] -translate-y-0 overflow-hidden content-center p-2 shadow-lg'> Real time stocks, crypto news alerts to exit/buy before crash/pump</div>
               <div className='absolute -translate-x-[420px] translate-y-80 w-[550px] flex flex-col'>
                 <span>Tracking assets every day, every second is tough and a real headache</span>
-                <span className='text-xl'>We're here to swoop in and <span className='text-red-700'>eradicate</span> those troublesome losses.</span>
+                <span className='text-xl'>We&apos;re here to swoop in and <span className='text-red-700'>eradicate</span> those troublesome losses.</span>
               </div>
 
               <button onClick={handleOpenModal} className='bg-gray-900 text-gray-100 px-4 py-2 rounded-lg shadow-lg relative'>

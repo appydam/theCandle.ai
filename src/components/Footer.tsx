@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
 
               <div className="col-span-2 sm:col-span-1">
-                <p className="font-medium text-gray-900">What's new</p>
+                <p className="font-medium text-gray-900">What&apos;s new</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
