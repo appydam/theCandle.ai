@@ -1,5 +1,6 @@
 import { squareBackground } from '@/constants/colors'
 import React from 'react'
+import CurvyZigzagLine from './CurvyZigzagLine';
 
 type Feature = {
     title: string;
@@ -41,9 +42,15 @@ const FeaturesSection = () => {
                     <h2 className="text-3xl font-bold sm:text-4xl text-gray-600">Revolutionizing Your Investment Experience</h2>
                     <p className="mt-4 text-gray-500">Empowering Informed Decision-Making for Wealth Creation, and Transforming Investor Knowledge & Earnings Potential</p>
                 </div>
+                <div className="absolute translate-x-80 translate-y-[188px] ">
+                    <CurvyZigzagLine width={420} height={110} waveLength={200} waveHeight={5} />
+                </div>
+                <div className="absolute translate-x-[350px] translate-y-[200px] ">
+                    <CurvyZigzagLine width={420} height={110} waveLength={200} waveHeight={5} />
+                </div>
                 <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {features.map((feature, index) => (
-                        <a key={index} href="#" className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-200 hover:shadow-blue-300">
+                        <a key={index} className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-200 hover:shadow-blue-300">
                             <h2 className="mt-4 text-xl font-bold text-gray-700">{feature.title}</h2>
                             <p className="mt-1 text-base text-gray-600">{feature.description}</p>
                         </a>

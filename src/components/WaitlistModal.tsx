@@ -1,5 +1,6 @@
 // WaitlistModal.tsx
 
+// import { saveUserDataToDynamoDB } from '@/lib/dynamoDBClient';
 import React, { useState } from 'react';
 
 interface WaitlistModalProps {
@@ -18,11 +19,15 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ onClose }) => {
         setPhoneNumber(e.target.value);
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Here you can save the email and phone number data or perform any other action
-        // For example, you can save the data to a state variable in your page component
-        // You can also close the modal after submitting the form
+        // try {
+        //     console.log('we are in handleSubmit')
+        //     await saveUserDataToDynamoDB(email, phoneNumber);
+        //     onClose();
+        // } catch (error) {
+        //     console.error('Failed to save data:', error);
+        // }
         console.log('Email:', email);
         console.log('Phone Number:', phoneNumber);
         onClose();
