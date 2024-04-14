@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="w-[30px] h-full">
               <a href="/">
                 <Image
-                  src="/portfolioAILogo.png"
+                  src="/logo.png"
                   width={10000}
                   height={10000}
                   alt="Picture of social logins"

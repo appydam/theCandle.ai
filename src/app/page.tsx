@@ -15,6 +15,7 @@ import WaitlistModal from '@/components/WaitlistModal';
 import CurvyZigzagLine from '@/components/CurvyZigzagLine';
 import FeaturesSection from '@/components/FeaturesSection';
 import Head from 'next/head';
+import Team from '@/components/Team';
 
 export default function Home() {
 
@@ -49,7 +50,7 @@ export default function Home() {
                 <div className="w-[30px] h-[70px] -translate-y-[10px] translate-x-1">
 
                   <Image
-                    src="/portfolioAILogo.png"
+                    src="/logo.png"
                     width={10000}
                     height={10000}
                     alt="Picture of social logins"
@@ -247,6 +248,8 @@ export default function Home() {
         </div>
 
         <FeaturesSection />
+
+        <Team />
 
         <div className='flex justify-center'>
           <button onClick={handleOpenModal} className='bg-gray-900 text-gray-100 px-4 py-2 rounded-lg shadow-lg absolute'>
