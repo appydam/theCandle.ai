@@ -28,27 +28,27 @@ const Team = (props: Props) => {
             twitter: 'https://twitter.com/arpit_dhamija',
             email: 'appydam@gmail.com',
         },
-        {
-            id: 2,
-            name: 'Mehak Dhamija',
-            imageUrl: cofounderPic,
-            description: 'Co-Founder & Chief of Strategy',
-            achievementL1: '- Microsoft Research, Bain & Co. 20U20',
-            achievementL2: '- Developer, strategic consultant',
-            linkedin: 'https://www.linkedin.com/in/mehak-dhamija-95407522b/',
-            email: 'mehakdhamija82@gmail.com',
-        },
-        {
-            id: 3,
-            name: 'Srikant Aggarwal',
-            imageUrl: advisorPic,
-            description: 'Advisor',
-            achievementL1: '- ex Uber, Meta, Amazon & top startups',
-            achievementL2: '- MS @ Stony Brook',
-            linkedin: 'https://www.linkedin.com/in/srikantaggarwal/',
-            twitter: 'https://twitter.com/srikant_1986',
+        // {
+        //     id: 2,
+        //     name: 'Mehak Dhamija',
+        //     imageUrl: cofounderPic,
+        //     description: 'Co-Founder & Chief of Strategy',
+        //     achievementL1: '- Microsoft Research, Bain & Co. 20U20',
+        //     achievementL2: '- Developer, strategic consultant',
+        //     linkedin: 'https://www.linkedin.com/in/mehak-dhamija-95407522b/',
+        //     email: 'mehakdhamija82@gmail.com',
+        // },
+        // {
+        //     id: 3,
+        //     name: 'Srikant Aggarwal',
+        //     imageUrl: advisorPic,
+        //     description: 'Advisor',
+        //     achievementL1: '- ex Uber, Meta, Amazon & top startups',
+        //     achievementL2: '- MS @ Stony Brook',
+        //     linkedin: 'https://www.linkedin.com/in/srikantaggarwal/',
+        //     twitter: 'https://twitter.com/srikant_1986',
 
-        },
+        // },
 
     ];
 
